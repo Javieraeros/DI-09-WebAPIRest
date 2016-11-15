@@ -26,7 +26,8 @@
       "imports": [
         "dotnet5.6",
         "portable-net45+win8"
-      ]
+      ],
+      "dependencies": {"System.Data.SqlClient": "4.1.0-*"}
     }
   },
 

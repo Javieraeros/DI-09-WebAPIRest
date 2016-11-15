@@ -20,7 +20,20 @@ namespace DI_09_WebAPIRest.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            string value = "";
+            switch (id)
+            {
+                case 0:
+                    value = "Hola";
+                    break;
+                case 1:
+                    value = "Fernando";
+                    break;
+                default:
+                    value = "yiii";
+                    break;
+            }
+            return value;
         }
 
         // POST api/values
